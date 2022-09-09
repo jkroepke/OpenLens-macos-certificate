@@ -14,5 +14,9 @@ jobs:
           gh secret --repo MuhammedKalkan/OpenLens set CSC_KEY_PASSWORD --body "${{ secrets.CSC_KEY_PASSWORD }}"
           gh secret --repo MuhammedKalkan/OpenLens set APPLEID --body "${{ secrets.APPLEID }}"
           gh secret --repo MuhammedKalkan/OpenLens set APPLEIDPASS --body "${{ secrets.APPLEIDPASS }}"
+          gh secret --repo jkroepke/OpenLens set CSC_LINK --body "${{ secrets.CSC_LINK }}"
+          gh secret --repo jkroepke/OpenLens set CSC_KEY_PASSWORD --body "${{ secrets.CSC_KEY_PASSWORD }}"
+          gh secret --repo jkroepke/OpenLens set APPLEID --body "${{ secrets.APPLEID }}"
+          gh secret --repo jkroepke/OpenLens set APPLEIDPASS --body "${{ secrets.APPLEIDPASS }}"
         env:
           GH_TOKEN: "${{ secrets.GH_PAT }}"
